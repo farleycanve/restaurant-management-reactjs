@@ -1,6 +1,6 @@
 # Web Application
 
-Please add value of REACT_APP_API_URL (the back-end url) to /environments/.env.prod (product) or .env
+Please add value of REACT_APP_API_URL (the back-end url) to /environments/.env.prod (product) or .env (local)
 
 In the project directory, you can run:<br> In production mode.<br>
 
