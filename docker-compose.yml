@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+  interview-fe:
+    container_name: interview-fe
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        stage: prod
+      network: host
+    ports:
+      - '6565:80'
+    restart: always
