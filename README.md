@@ -2,11 +2,15 @@
 
 Please add value of REACT_APP_API_URL (the back-end url) to /environments/.env.prod (product) or .env
 
-In the project directory, you can run:
+In the project directory, you can run: uns the app in production mode.<br>
+
+### `docker-compose up -d`
+
+Runs the app in development mode.<br>
 
 ### `npm start` or `yarn start`
 
-Runs the app in development mode.<br> Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### `npm run build` or `yarn build`
 
