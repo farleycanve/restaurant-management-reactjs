@@ -1,4 +1,4 @@
-FROM node:alpine as build
+FROM node:16-alpine as build
 WORKDIR /app
 COPY package.json ./
 COPY package-lock.json ./
@@ -6,7 +6,6 @@ RUN npm ci --force
 RUN npm install -g react-scripts@4.0.3
 RUN npm install -g env-cmd
 COPY . ./
-ENV NODE_OPTIONS=--openssl-legacy-provider
 ARG stage
 RUN npm run build:$stage
 
